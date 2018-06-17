@@ -53,7 +53,7 @@ function StegModule(id, ppm) {
  * Each error message must start with the above IDs (STEG_TOO_BIG, etc).
  */
 StegModule.prototype.hide = function(msg) {
-  //TODO: hide STEG_MAGIC + msg + '\0' into a copy of this.ppm
+  //hide STEG_MAGIC + msg + '\0' into a copy of this.ppm
   //construct copy as shown below, then update pixelBytes in the copy.
 
   var ppmOut = new Ppm(this.ppm); //Create a copy of the ppm image
